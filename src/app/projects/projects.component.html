@@ -1,0 +1,65 @@
+<div class="w-full h-full bg-black overflow-auto">
+  <!-- Title -->
+  <div class="flex justify-center items-center p-5">
+    <p class="text-3xl sm:text-4xl text-white font-bold">My Projects</p>
+  </div>
+
+  <!-- Divider -->
+  <div class="flex justify-center items-center">
+    <div class="h-1 bg-white w-40 sm:w-60 rounded-full"></div>
+  </div>
+
+  <!-- Filter -->
+  <div class="m-6 flex items-center">
+    <img src="/images/filter.png" class="h-10 w-10 bg-white rounded-full p-1 border-white" />
+    <select class="border bg-black text-white p-2 w-48 sm:w-60 ml-4 rounded-xl">
+      <option value="">All Projects</option>
+    </select>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 pb-20">
+    <div
+      *ngFor="let project of projects"
+      class="bg-black border border-white text-white rounded-2xl w-full max-w-sm hover:-translate-y-2 transition-transform duration-300 ease-in-out"
+      style="box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);"
+    >
+      <!-- Image -->
+      <div class="p-4">
+        <div class="rounded-xl overflow-hidden aspect-video">
+          <img [src]="project.imgUrl" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <!-- Title -->
+      <div class="text-xl sm:text-2xl font-semibold px-4">{{ project.name }}</div>
+
+      <!-- Description -->
+      <div class="text-gray-400 px-4 py-2 text-sm sm:text-base">
+        {{ project.description }}
+      </div>
+
+      <!-- Technologies -->
+      <div class="px-4 pb-4 flex flex-wrap justify-center gap-3">
+        <div
+          *ngFor="let tech of project.techs"
+          class="h-8 w-8 rounded-full bg-white p-1 shadow"
+        >
+          <img [src]="tech" class="object-contain w-full h-full" />
+        </div>
+      </div>
+
+      <!-- GitHub Link -->
+      <div class="px-4 pb-4">
+        <a
+          class="flex items-center gap-2 rounded-xl border border-white p-2 hover:bg-white hover:text-black transition"
+          href="https://github.com/JunaidUthman/Free-Course-web-application"
+          target="_blank"
+        >
+          <img src="/images/github.png" class="h-6 w-6 rounded-full bg-white" />
+          <span class="font-medium">See the Code</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
