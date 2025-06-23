@@ -2,7 +2,7 @@
 
     <app-animate-on-load>
         <div class="flex justify-center w-full bg-black">
-        <div class="mt-10 bg-black h-40 w-40 rounded-full overflow-hidden " style="box-shadow: 0 0 60px rgb(255, 255, 255 , 0.7);">
+        <div class="mt-10 bg-black h-20 w-20 rounded-full overflow-hidden sm:h-40 sm:w-40 " style="box-shadow: 0 0 60px rgb(255, 255, 255 , 0.7);">
             <img src="/images/my_pic.jpg" alt="" class="h-full w-full object-cover">
         </div>
     </div>
@@ -11,45 +11,60 @@
     <app-animate-on-load>
         <div class=" p-4 flex justify-center w-full gap-4">
 
-        <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
-            <img src="/images/email.png" alt="" >
-        </div>
-        <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
-            <img src="/images/github.png" alt="" >
-        </div>
-        <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
-            <img src="/images/linkedin.png" alt="" >
-        </div>
-        <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
-            <img src="/images/twitter.png" alt="" >
-        </div>
+
+            <div class="relative group h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
+            <img src="/images/email.png" alt="">
+            <div class="absolute  top-full mt-2 px-2 py-1 bg-black text-white text-xs rounded opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap z-10">
+                uthmanjunaid400&#64;gmail.com
+            </div>
+            </div>
+        
+        <a href="www.linkedin.com/in/junaid-uthman">
+            <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
+                <img src="/images/linkedin.png" alt="" >
+            </div>
+        </a>
+        <a href="https://github.com/JunaidUthman">
+            <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
+                <img src="/images/github.png" alt="" >
+            </div>
+        </a>
+
+            <div class="h-7 w-7 rounded-full bg-white" style="box-shadow: 0 0 10px rgb(255, 255, 255 , 0.7);">
+                <img src="/images/twitter.png" alt="" >
+            </div>
+
     </div>
     </app-animate-on-load>
     
 
-    <app-animate-on-load>
-        <div class="flex-col justify-center">
-        <div class="flex justify-center text-white ">
-            <a routerLink="/home" routerLinkActive="active-link"  class="border border-white rounded-xl p-4 m-2 w-full text-center hover:bg-white hover:text-black transition duration-300 ease-in-out ">
-                Home
-            </a>
+    <app-animate-on-load class="h-full">
+        <div class="flex flex-col justify-center items-center h-full">
+            <div class="flex justify-center text-white w-full">
+                <a routerLink="/home" routerLinkActive="active-link"
+                class="border border-white rounded-xl p-2 sm:p-4 m-1 sm:m-2 w-full text-center text-sm sm:text-base hover:bg-white hover:text-black transition duration-300 ease-in-out">
+                    Home
+                </a>
+            </div>
+            <div class="flex justify-center text-white w-full">
+                <a routerLink="/skills"
+                class="border border-white rounded-xl p-2 sm:p-4 m-1 sm:m-2 w-full text-center text-sm sm:text-base hover:bg-white hover:text-black transition duration-300 ease-in-out">
+                    Skills
+                </a>
+            </div>
+            <div class="flex justify-center text-white w-full">
+                <a routerLink="/projects"
+                class="border border-white rounded-xl p-2 sm:p-4 m-1 sm:m-2 w-full text-center text-sm sm:text-base hover:bg-white hover:text-black transition duration-300 ease-in-out">
+                    Projects
+                </a>
+            </div>
+            <div class="flex justify-center text-white w-full">
+                <a routerLink="/contactMe"
+                class="border border-white rounded-xl p-2 sm:p-4 m-1 sm:m-2 w-full text-center text-sm sm:text-base hover:bg-white hover:text-black transition duration-300 ease-in-out">
+                    Contact Me
+                </a>
+            </div>
         </div>
-        <div class="flex justify-center text-white">
-            <a routerLink="/skills" class="border border-white rounded-xl p-4 m-2 w-full text-center hover:bg-white hover:text-black transition duration-300 ease-in-out">
-                Skills
-            </a>
-        </div>
-        <div class="flex justify-center text-white">
-            <a routerLink="/projects" class="border border-white rounded-xl p-4 m-2 w-full text-center  hover:bg-white hover:text-black transition duration-300 ease-in-out">
-                Projects
-            </a>
-        </div>
-        <div class="flex justify-center text-white">
-            <a routerLink="/contactMe" class="border border-white rounded-xl p-4 m-2 w-full text-center  hover:bg-white hover:text-black transition duration-300 ease-in-out">
-                About Me
-            </a>
-        </div>
-    </div>
     </app-animate-on-load>
     
     
