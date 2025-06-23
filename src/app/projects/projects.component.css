@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .neon-glow {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 35px #0073e6, 0 0 40px #0073e6;
+        }
+        
+        .typewriter {
+            border-right: 3px solid;
+            animation: blink 1s infinite;
+        }
+        
+        /* @keyframes blink {
+            0%, 50% { border-color: transparent; }
+            51%, 100% { border-color: white; }
+        } */
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        } */
+        
+        .glitch {
+            animation: glitch-vertical 2s infinite;
+        }
+        
+        /* @keyframes glitch-vertical {
+            0% { transform: translateY(0); }
+            20% { transform: translateY(-2px); }
+            40% { transform: translateY(2px); }
+            60% { transform: translateY(-1px); }
+            80% { transform: translateY(1px); }
+            100% { transform: translateY(0); }
+        } */
+        
+        .cool-shadow {
+            text-shadow: 
+                0 0 10px rgba(34, 197, 94, 0.5),
+                0 0 20px rgba(34, 197, 94, 0.3),
+                0 0 30px rgba(34, 197, 94, 0.2),
+                0 4px 8px rgba(0, 0, 0, 0.3),
+                0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .green-shadow {
+            text-shadow: 
+                0 0 8px rgba(74, 222, 128, 0.4),
+                0 0 16px rgba(74, 222, 128, 0.3),
+                0 4px 8px rgba(0, 0, 0, 0.4),
+                0 8px 16px rgba(0, 0, 0, 0.2);
+        }

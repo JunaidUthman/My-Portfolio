@@ -1,0 +1,17 @@
+.web-dev-section-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+  /* Optional: hide scrollbar */
+  scrollbar-width: none;
+}
+.web-dev-section-container::-webkit-scrollbar {
+  display: none;
+}
+.web-dev-item {
+  flex: 0 0 auto;
+  width: 200px; /* Adjust as needed */
+  margin-right: 16px;
+}

@@ -1,0 +1,15 @@
+ti-cursor {
+  color: #00ffd9;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing-text {
+  font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
