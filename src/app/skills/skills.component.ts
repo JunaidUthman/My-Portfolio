@@ -55,6 +55,7 @@ export class SkillsComponent {
     { name: 'Git', image: '/images/git.png' },
     { name: 'C++', image: '/images/cpp.png' },
     { name: 'Java', image: '/images/java.png' },
+    
     { name: 'Python', image: '/images/python.png' }
   ];
 

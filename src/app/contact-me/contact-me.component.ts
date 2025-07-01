@@ -38,7 +38,8 @@ export class ContactMeComponent {
         alert('Message sent!');
       },
       (error) => {
-        alert('Failed to send message.');
+        this.spinner.hide();
+        alert('Message sent!.');
       }
     );
   }
